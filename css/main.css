@@ -1,0 +1,91 @@
+body {
+
+    padding-top: 5.3rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: #EEEEEE;
+   
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.card-title{
+    font-weight: bold;
+}
+#logo{
+    width: 10rem;
+}
+
+#titulo{
+    font-size:xx-large;
+    color: rgb(80, 79, 79);
+}
+
+.card:hover{
+    background-color: #3FC334   ;
+}
+
+.app-img{
+    cursor: pointer;
+}
+.app-img:hover{
+    filter: brightness();
+}
+
+.btn-secondary:hover{
+    background-color: #4485F6;
+}
+
+.btn-secondary{
+    background-color: #4485F6;
+}
+
+#estrellas2{
+    color: #C50E0E;
+}
+
+#estrellas1{
+    color: #1CD30D;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+/* Cambiar */
+
+#padreestrella{
+
+ 
+ 
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+   
+  
+  }
+  
+  #padrecom{
+  
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  
+  }
+  
+  .cardBorder{
+  
+      border-radius: 0px !important;
+      border: 0px !important;
+  }
+  .modal-header {
+  
+      border-bottom: 0px !important;
+  
+  
+  
+  
+  }
