@@ -97,53 +97,7 @@ let estrellas = '';
     
     }
     
-function cargarAplicaciones(){
-    document.getElementById('aplicacionesCatg').innerHTML = '';
- var info=document.getElementById('listaCategoria');
- var info2=info.value;
- for (let i = 0; i < categorias[info2].aplicaciones.length; i++) {
-    var info2=info.value;
-    var app = {
-        sentinela: categorias[info2].aplicaciones[i],
-    };
 
-
-let estrellas = '';
-
-
-    for (let i = 0; i < app.sentinela.calificacion; i++) {
-        if (app.sentinela.calificacion>=3) {
-            estrellas += '<i style=" color:#A4EC37 " class="fa-solid fa-star ml-auto mr-auto"></i>';
-          
-        }else{
-            estrellas += '<i  style=" color:#E74D4D " class="fa-solid fa-star ml-auto mr-auto"></i>';
-        
-        }
-    
-    }
-
-for (let i = 0; i < 5 - app.sentinela.calificacion; i++) {
-
-    estrellas += '<i class="fa-regular fa-star"></i>';
-
-}
-document.getElementById('aplicacionesCatg').innerHTML +=` 
-
-    <div class="col-xl-2 col-md-3 col-sm-2 col-6" style="padding: 10px; " "> 
-              <div class="card" style="padding 15px" >
-                  <img onclick="imgModal(${i})" src="${app.sentinela.icono}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title" >${app.sentinela.nombre}</h5>
-                    <p class="card-text">${app.sentinela.desarrollador}</p>
-                    ${estrellas}
-                  </div>
-                </div>
-
-            </div>
-
-`;
-
-}
 
 
 }
